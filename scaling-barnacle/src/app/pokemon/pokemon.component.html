@@ -1,2 +1,9 @@
 <h2>Your pokemon</h2>
 <p>{{pokemon.name}} is number {{pokemon.id}} in the pokedex</p>
+<h3>Refactored code</h3> 
+<p>2 way databinding</p>
+
+<div>
+  <label for="name">Pokemon name: </label>
+  <input id="name" [(ngModel)]="pokemon.name" placeholder="name">
+</div>
