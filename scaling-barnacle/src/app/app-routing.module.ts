@@ -7,6 +7,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 // define the pokemon route to use
 const routes: Routes = [
 { path: 'pokemon-component', component: PokemonComponent},
+{ path: '', redirectTo: '/heroes-list', pathMatch: 'full'},
 ];
 
 @NgModule({
