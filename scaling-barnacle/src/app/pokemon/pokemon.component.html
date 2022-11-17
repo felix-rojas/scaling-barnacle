@@ -1,9 +1,14 @@
-<h2>Your pokemon</h2>
-<p>{{pokemon.name}} is number {{pokemon.id}} in the pokedex</p>
-<h3>Refactored code</h3> 
-<p>2 way databinding</p>
+<div class="card">
+  <div class="card-content">
+    <h2>Choose your pokemon</h2>
+    <h4 for="name">Pokemon name:</h4>
+    <input class="input" id="name" [(ngModel)]="pokemon.name" placeholder="Insert pokemon name">
+  </div>
+</div>
 
-<div>
-  <label for="name">Pokemon name: </label>
-  <input id="name" [(ngModel)]="pokemon.name" placeholder="name">
+<div class="card">
+  <div class="card-content">
+    <h3>{{pokemon.name}} is number {{pokemon.id}} in the pokedex</h3>
+    <p>Look how this is dynamically updated thanks to 2 way databinding</p>
+  </div>
 </div>
