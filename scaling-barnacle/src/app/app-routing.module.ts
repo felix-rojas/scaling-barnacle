@@ -1,6 +1,7 @@
 //dependeencies
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 
@@ -8,7 +9,8 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 // define the pokemon route to use
 const routes: Routes = [
   {path: 'pokemon-component', component: PokemonComponent },
-  {path: '', redirectTo: '/pokemon-component', pathMatch: 'full' },
+  {path: 'home', component: HomePageComponent },
+  {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: '**', component: PageNotFoundComponent },
 ];
 
