@@ -12,3 +12,16 @@
     <p>Look how this is dynamically updated thanks to 2 way databinding</p>
   </div>
 </div>
+
+
+<div class="card">
+    <div class="card-content">
+    <h2>My pokemon</h2>
+    <table class="table is-bordered is-narrow">
+      <div class="buttons" *ngFor="let pokemon of pokemonlist">
+          <button class="button is-info">{{pokemon.id}}</button>
+          <button class="button is-primary is-light">{{pokemon.name}}</button>
+      </div>
+    </table>
+  </div>
+</div>
