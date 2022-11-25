@@ -14,14 +14,16 @@
 </div>
 
 
-<div class="card">
+<div class="section">
+  <div class="card">
+    <div class="card-header">
+      <button class="button is-primary is-medium">My pokemon</button>
+    </div>
     <div class="card-content">
-    <h2>My pokemon</h2>
-    <table class="table is-bordered is-narrow">
-      <div class="buttons" *ngFor="let pokemon of pokemonlist">
-          <button class="button is-info">{{pokemon.id}}</button>
-          <button class="button is-primary is-light">{{pokemon.name}}</button>
-      </div>
-    </table>
+      <ul *ngFor="let pokemon of pokemonlist">
+        <p> {{pokemon.id}}. {{pokemon.name}}
+        <p>
+      </ul>
+    </div>
   </div>
-</div>
+</div>  

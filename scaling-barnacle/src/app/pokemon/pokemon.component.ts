@@ -14,10 +14,15 @@ export class PokemonComponent implements OnInit {
   };
   
   pokemonlist = POKEMONLIST;
-  
+  selectedPokemon?: Pokemon;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(pokemon: Pokemon): void {
+    this.selectedPokemon = pokemon;
   }
 
 }
